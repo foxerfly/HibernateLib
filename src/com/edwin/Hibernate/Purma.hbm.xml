@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 2, 2013 10:21:22 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.edwin.Hibernate.Purma" table="PURMA" schema="dbo" catalog="fanski">
+        <id name="ma001" type="string">
+            <column name="MA001" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="company" type="string">
+            <column name="COMPANY" length="10" />
+        </property>
+        <property name="creator" type="string">
+            <column name="CREATOR" length="10" />
+        </property>
+        <property name="usrGroup" type="string">
+            <column name="USR_GROUP" length="10" />
+        </property>
+        <property name="createDate" type="string">
+            <column name="CREATE_DATE" length="17" />
+        </property>
+        <property name="modifier" type="string">
+            <column name="MODIFIER" length="10" />
+        </property>
+        <property name="modiDate" type="string">
+            <column name="MODI_DATE" length="17" />
+        </property>
+        <property name="flag" type="java.lang.Short">
+            <column name="FLAG" precision="3" scale="0" />
+        </property>
+        <property name="ma002" type="string">
+            <column name="MA002" length="20" />
+        </property>
+        <property name="ma003" type="string">
+            <column name="MA003" length="72" />
+        </property>
+        <property name="ma004" type="string">
+            <column name="MA004" length="6" />
+        </property>
+        <property name="ma005" type="string">
+            <column name="MA005" length="20" />
+        </property>
+        <property name="ma006" type="string">
+            <column name="MA006" length="6" />
+        </property>
+        <property name="ma007" type="string">
+            <column name="MA007" length="6" />
+        </property>
+        <property name="ma008" type="string">
+            <column name="MA008" length="20" />
+        </property>
+        <property name="ma009" type="string">
+            <column name="MA009" length="20" />
+        </property>
+        <property name="ma010" type="string">
+            <column name="MA010" length="20" />
+        </property>
+        <property name="ma011" type="string">
+            <column name="MA011" length="36" />
+        </property>
+        <property name="ma012" type="string">
+            <column name="MA012" length="30" />
+        </property>
+        <property name="ma013" type="string">
+            <column name="MA013" length="30" />
+        </property>
+        <property name="ma014" type="string">
+            <column name="MA014" length="72" />
+        </property>
+        <property name="ma015" type="string">
+            <column name="MA015" length="72" />
+        </property>
+        <property name="ma016" type="java.lang.Character">
+            <column name="MA016" length="1" />
+        </property>
+        <property name="ma017" type="string">
+            <column name="MA017" length="8" />
+        </property>
+        <property name="ma018" type="big_decimal">
+            <column name="MA018" precision="16" />
+        </property>
+        <property name="ma019" type="java.lang.Integer">
+            <column name="MA019" precision="7" scale="0" />
+        </property>
+        <property name="ma020" type="java.lang.Character">
+            <column name="MA020" length="1" />
+        </property>
+        <property name="ma021" type="string">
+            <column name="MA021" length="4" />
+        </property>
+        <property name="ma022" type="string">
+            <column name="MA022" length="8" />
+        </property>
+        <property name="ma023" type="string">
+            <column name="MA023" length="8" />
+        </property>
+        <property name="ma024" type="string">
+            <column name="MA024" length="4" />
+        </property>
+        <property name="ma025" type="string">
+            <column name="MA025" length="16" />
+        </property>
+        <property name="ma026" type="string">
+            <column name="MA026" length="16" />
+        </property>
+        <property name="ma027" type="string">
+            <column name="MA027" length="10" />
+        </property>
+        <property name="ma028" type="string">
+            <column name="MA028" length="30" />
+        </property>
+        <property name="ma029" type="java.lang.Character">
+            <column name="MA029" length="1" />
+        </property>
+        <property name="ma030" type="java.lang.Character">
+            <column name="MA030" length="1" />
+        </property>
+        <property name="ma031" type="java.lang.Character">
+            <column name="MA031" length="1" />
+        </property>
+        <property name="ma032" type="java.lang.Character">
+            <column name="MA032" length="1" />
+        </property>
+        <property name="ma033" type="java.lang.Character">
+            <column name="MA033" length="1" />
+        </property>
+        <property name="ma034" type="java.lang.Character">
+            <column name="MA034" length="1" />
+        </property>
+        <property name="ma035" type="string">
+            <column name="MA035" length="2" />
+        </property>
+        <property name="ma036" type="java.lang.Character">
+            <column name="MA036" length="1" />
+        </property>
+        <property name="ma037" type="string">
+            <column name="MA037" length="2" />
+        </property>
+        <property name="ma038" type="java.lang.Character">
+            <column name="MA038" length="1" />
+        </property>
+        <property name="ma039" type="string">
+            <column name="MA039" length="2" />
+        </property>
+        <property name="ma040" type="string">
+            <column name="MA040" />
+        </property>
+        <property name="ma041" type="string">
+            <column name="MA041" length="20" />
+        </property>
+        <property name="ma042" type="string">
+            <column name="MA042" length="20" />
+        </property>
+        <property name="ma043" type="string">
+            <column name="MA043" length="20" />
+        </property>
+        <property name="ma044" type="java.lang.Character">
+            <column name="MA044" length="1" />
+        </property>
+        <property name="ma045" type="java.lang.Character">
+            <column name="MA045" length="1" />
+        </property>
+        <property name="ma046" type="string">
+            <column name="MA046" length="10" />
+        </property>
+        <property name="ma047" type="string">
+            <column name="MA047" length="10" />
+        </property>
+        <property name="ma048" type="string">
+            <column name="MA048" length="30" />
+        </property>
+        <property name="ma049" type="string">
+            <column name="MA049" length="30" />
+        </property>
+        <property name="ma050" type="string">
+            <column name="MA050" length="10" />
+        </property>
+        <property name="ma051" type="string">
+            <column name="MA051" length="72" />
+        </property>
+        <property name="ma052" type="string">
+            <column name="MA052" length="72" />
+        </property>
+        <property name="ma053" type="java.lang.Character">
+            <column name="MA053" length="1" />
+        </property>
+        <property name="ma054" type="big_decimal">
+            <column name="MA054" precision="5" scale="4" />
+        </property>
+        <property name="ma055" type="string">
+            <column name="MA055" length="6" />
+        </property>
+        <property name="ma056" type="java.lang.Character">
+            <column name="MA056" length="1" />
+        </property>
+        <property name="ma057" type="java.lang.Character">
+            <column name="MA057" length="1" />
+        </property>
+        <property name="ma058" type="big_decimal">
+            <column name="MA058" precision="5" scale="4" />
+        </property>
+        <property name="ma059" type="string">
+            <column name="MA059" length="20" />
+        </property>
+        <property name="ma060" type="java.lang.Character">
+            <column name="MA060" length="1" />
+        </property>
+        <property name="ma061" type="string">
+            <column name="MA061" length="20" />
+        </property>
+        <property name="ma062" type="string">
+            <column name="MA062" length="20" />
+        </property>
+        <property name="ma063" type="string">
+            <column name="MA063" length="20" />
+        </property>
+        <property name="ma064" type="big_decimal">
+            <column name="MA064" precision="5" scale="4" />
+        </property>
+        <property name="ma065" type="string">
+            <column name="MA065" length="20" />
+        </property>
+        <property name="ma066" type="java.lang.Short">
+            <column name="MA066" precision="4" scale="0" />
+        </property>
+        <property name="ma067" type="string">
+            <column name="MA067" length="2" />
+        </property>
+        <property name="ma068" type="string">
+            <column name="MA068" length="20" />
+        </property>
+        <property name="ma069" type="java.lang.Character">
+            <column name="MA069" length="1" />
+        </property>
+        <property name="ma070" type="string">
+            <column name="MA070" length="8" />
+        </property>
+        <property name="ma071" type="string">
+            <column name="MA071" length="30" />
+        </property>
+        <property name="ma072" type="big_decimal">
+            <column name="MA072" precision="16" scale="6" />
+        </property>
+        <property name="ma073" type="big_decimal">
+            <column name="MA073" precision="16" scale="6" />
+        </property>
+        <property name="ma074" type="big_decimal">
+            <column name="MA074" precision="16" scale="6" />
+        </property>
+        <property name="ma075" type="string">
+            <column name="MA075" length="10" />
+        </property>
+        <property name="ma076" type="java.lang.Character">
+            <column name="MA076" length="1" />
+        </property>
+        <property name="ma077" type="java.lang.Character">
+            <column name="MA077" length="1" />
+        </property>
+        <property name="ma078" type="string">
+            <column name="MA078" length="20" />
+        </property>
+        <property name="ma079" type="string">
+            <column name="MA079" length="8" />
+        </property>
+        <property name="udf01" type="string">
+            <column name="UDF01" />
+        </property>
+        <property name="udf02" type="string">
+            <column name="UDF02" />
+        </property>
+        <property name="udf03" type="string">
+            <column name="UDF03" />
+        </property>
+        <property name="udf04" type="string">
+            <column name="UDF04" />
+        </property>
+        <property name="udf05" type="string">
+            <column name="UDF05" />
+        </property>
+        <property name="udf06" type="string">
+            <column name="UDF06" />
+        </property>
+        <property name="udf51" type="big_decimal">
+            <column name="UDF51" precision="16" scale="6" />
+        </property>
+        <property name="udf52" type="big_decimal">
+            <column name="UDF52" precision="16" scale="6" />
+        </property>
+        <property name="udf53" type="big_decimal">
+            <column name="UDF53" precision="16" scale="6" />
+        </property>
+        <property name="udf54" type="big_decimal">
+            <column name="UDF54" precision="16" scale="6" />
+        </property>
+        <property name="udf55" type="big_decimal">
+            <column name="UDF55" precision="16" scale="6" />
+        </property>
+        <property name="udf56" type="big_decimal">
+            <column name="UDF56" precision="16" scale="6" />
+        </property>
+        <property name="udf07" type="string">
+            <column name="UDF07" />
+        </property>
+        <property name="udf08" type="string">
+            <column name="UDF08" />
+        </property>
+        <property name="udf09" type="string">
+            <column name="UDF09" />
+        </property>
+        <property name="udf10" type="string">
+            <column name="UDF10" />
+        </property>
+        <property name="udf11" type="string">
+            <column name="UDF11" />
+        </property>
+        <property name="udf12" type="string">
+            <column name="UDF12" />
+        </property>
+        <property name="udf57" type="big_decimal">
+            <column name="UDF57" precision="16" scale="6" />
+        </property>
+        <property name="udf58" type="big_decimal">
+            <column name="UDF58" precision="16" scale="6" />
+        </property>
+        <property name="udf59" type="big_decimal">
+            <column name="UDF59" precision="16" scale="6" />
+        </property>
+        <property name="udf60" type="big_decimal">
+            <column name="UDF60" precision="16" scale="6" />
+        </property>
+        <property name="udf61" type="big_decimal">
+            <column name="UDF61" precision="16" scale="6" />
+        </property>
+        <property name="udf62" type="big_decimal">
+            <column name="UDF62" precision="16" scale="6" />
+        </property>
+    </class>
+</hibernate-mapping>

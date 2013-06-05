@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+    <schema-selection match-catalog="fanski" match-schema="dbo"/>
+    <table-filter match-name="COPMA"/>
+    <table-filter match-name="PURMA"/>
+    <table-filter match-name="INVMB"/>
+    <table-filter match-name="INVMBC"/>
+    <table-filter match-name="INVMBD"/>
+</hibernate-reverse-engineering>
