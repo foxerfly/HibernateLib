@@ -30,6 +30,10 @@ public final class SessionManager {
         return session.createCriteria(persistentClass);
     }
 
+    private SessionFactory getSessionFactory() {
+        return config.buildSessionFactory();
+    }
+
     private void buildSession() {
         sessionFactory = config.buildSessionFactory();
         session = sessionFactory.openSession();
