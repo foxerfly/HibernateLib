@@ -4,18 +4,10 @@
  */
 package com.edwin.App;
 
-import com.edwin.Hibernate.Copma;
-import com.edwin.Hibernate.Invmbc;
-import com.edwin.Hibernate.InvmbcId;
-import com.edwin.Hibernate.Invmbd;
-import com.edwin.Hibernate.InvmbdId;
 import com.edwin.Hibernate.SqlStart;
-import com.edwin.Hibernate.SqlStart;
-import com.xzq.osc.plaf.LookAndFeelManager;
 import java.math.BigDecimal;
 import java.util.Iterator;
 import java.util.List;
-import javax.swing.LookAndFeel;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -241,12 +233,12 @@ public class MainApp extends javax.swing.JFrame {
         Query qr = session.createQuery("from Copma as a where a.ma001='10000001'");
         List invmbd = qr.list();
 
-        for (Iterator it = invmbd.iterator(); it.hasNext();) {
-            Copma idc = (Copma) it.next();
-//            System.out.println(idc.getId() + "----------------" + idc.getId().getMb001());
-            idc.setCompany("EDWIN");
-            ta.append(idc.getMa001() + "-----------------" + idc.getCompany());
-        }
+//        for (Iterator it = invmbd.iterator(); it.hasNext();) {
+//            Copma idc = (Copma) it.next();
+////            System.out.println(idc.getId() + "----------------" + idc.getId().getMb001());
+//            idc.setCompany(MB001.getText().trim());
+//            ta.append(idc.getMa001() + "-----------------" + idc.getCompany() + "\n");
+//        }
 
         tx.commit();
         session.close();

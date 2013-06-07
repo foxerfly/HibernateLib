@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-
-
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2008Dialect</property>
         <property name="show_sql">true</property>
@@ -12,10 +10,11 @@
         <property name="hibernate.connection.url">jdbc:sqlserver://127.0.0.1\fanski:1433;databaseName=fanski</property>
         <property name="hibernate.connection.username">sa</property>
         <property name="hibernate.connection.password">86916503</property>
-        <mapping resource="com/edwin/Hibernate/Invmbd.hbm.xml"/>
-        <mapping resource="com/edwin/Hibernate/Invmbc.hbm.xml"/>
-        <mapping resource="com/edwin/Hibernate/Purma.hbm.xml"/>
-        <mapping resource="com/edwin/Hibernate/Copma.hbm.xml"/>
-        <!--<mapping resource="com/edwin/Hibernate/Invmb.hbm.xml"/>-->
+        <!--        <property name="hibernate.connection.url">jdbc:sqlserver://192.168.1.4\mytest:1433;databaseName=mytest</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password">fanski=123</property>-->
+        <mapping resource="com/edwin/admin/UserAccount.hbm.xml"/>
+        <mapping resource="com/edwin/admin/UserAuthorize.hbm.xml"/>
+        <mapping resource="com/edwin/admin/AuthorizeDetail.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
