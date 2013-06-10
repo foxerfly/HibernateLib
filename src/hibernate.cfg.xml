@@ -7,14 +7,14 @@
         <property name="format_sql">true</property>
         <property name="use_sql_comments">true</property>
         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <!--
         <property name="hibernate.connection.url">jdbc:sqlserver://127.0.0.1\fanski:1433;databaseName=fanski</property>
         <property name="hibernate.connection.username">sa</property>
-        <property name="hibernate.connection.password">86916503</property>
-        <!--        <property name="hibernate.connection.url">jdbc:sqlserver://192.168.1.4\mytest:1433;databaseName=mytest</property>
+        <property name="hibernate.connection.password">86916503</property>-->
+        <property name="hibernate.connection.url">jdbc:sqlserver://192.168.1.4\mytest:1433;databaseName=mytest</property>
         <property name="hibernate.connection.username">sa</property>
-        <property name="hibernate.connection.password">fanski=123</property>-->
-        <mapping resource="com/edwin/admin/UserAccount.hbm.xml"/>
-        <mapping resource="com/edwin/admin/UserAuthorize.hbm.xml"/>
-        <mapping resource="com/edwin/admin/AuthorizeDetail.hbm.xml"/>
+        <property name="hibernate.connection.password">fanski=123</property>
+
+        <mapping resource="com/edwin/Hibernate/mapping/UserAuthorize.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

@@ -6,7 +6,6 @@ package com.edwin.App;
 
 import com.edwin.Hibernate.SqlStart;
 import java.math.BigDecimal;
-import java.util.Iterator;
 import java.util.List;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
@@ -54,6 +53,8 @@ public class MainApp extends javax.swing.JFrame {
         cooperationPrice = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         sumPrice = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jXTable1 = new org.jdesktop.swingx.JXTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -95,6 +96,8 @@ public class MainApp extends javax.swing.JFrame {
         sumPrice.setText(getSumPrice().toString().trim());
         sumPrice.setEnabled(false);
 
+        jScrollPane2.setViewportView(jXTable1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -115,8 +118,11 @@ public class MainApp extends javax.swing.JFrame {
                     .addComponent(cooperationPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
                     .addComponent(sumPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 540, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,7 +153,11 @@ public class MainApp extends javax.swing.JFrame {
                 .addComponent(sumPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addGap(0, 13, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -214,6 +224,8 @@ public class MainApp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private org.jdesktop.swingx.JXTable jXTable1;
     private javax.swing.JTextField laborePrice;
     private javax.swing.JTextField madePrice;
     private javax.swing.JTextField materialPrice;
@@ -227,7 +239,6 @@ public class MainApp extends javax.swing.JFrame {
         Transaction tx;
         tx = session.beginTransaction();
         //        InvmbdId bId = new InvmbdId();
-        ;
 
 //        bId.setMb001(null);
         Query qr = session.createQuery("from Copma as a where a.ma001='10000001'");
@@ -239,7 +250,6 @@ public class MainApp extends javax.swing.JFrame {
 //            idc.setCompany(MB001.getText().trim());
 //            ta.append(idc.getMa001() + "-----------------" + idc.getCompany() + "\n");
 //        }
-
         tx.commit();
         session.close();
     }
